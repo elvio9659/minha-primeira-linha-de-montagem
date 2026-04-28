@@ -9,8 +9,8 @@ jobs:
 
     env:
       # Esta linha causa o aviso de "forced to run on Node 24", 
-      # mas garante que você use a versão mais nova.
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true  
+      # mas garante que você use a versão mais nova. Comentei nesta última versão
+      # FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true  
     
     steps:
       - name: 1. Pegar o chassi do carro (código-fonte)
