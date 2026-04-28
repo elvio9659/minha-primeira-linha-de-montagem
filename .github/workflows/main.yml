@@ -17,7 +17,7 @@ jobs:
       - name: Instalar Node.js versão 24 
         uses: actions/setup-node@v4 
         with: 
-          -node-version: '24'
+          - node-version: '24'
 
       - name: 1.5. Fabricar o produto
         run: echo "Este é o nosso produto final!" > produto.txt
