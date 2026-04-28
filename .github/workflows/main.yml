@@ -7,10 +7,11 @@ jobs:
   build-e-teste:
     runs-on: ubuntu-latest
 
-    # env:
+    env:
       # Esta linha causa o aviso de "forced to run on Node 24", 
       # mas garante que você use a versão mais nova. Comentei nesta última versão
       # FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true  
+      ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
     
     steps:
       - name: 1. Pegar o chassi do carro (código-fonte)
